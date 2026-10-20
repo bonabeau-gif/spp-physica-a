@@ -1,0 +1,242 @@
+[
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 1",
+    "caption": "Figure 1. Model schematic. A focal particle combines heading persistence, local alignment inside r_a, pair interactions up to r_1, and an optional taxis cue. The angular variable xi_i is a direction perturbation rather than a random translational force; eta sets its amplitude.",
+    "asset": "figures/manuscript/main_figure_1.png",
+    "matching_asset": null,
+    "sha256": "f484f1cf5b47c30e43809fcb428d3024a5c0c777eb704042e72f3f18194043d9"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 2",
+    "caption": "Figure 2. Direct quality-diversity archives for one particle type. (a) Alignment-milling archive with reflecting boundaries. (b) Alignment-clustering archive with periodic boundaries. Each archive is a single 64,000-evaluation process-parallel batched MAP-Elites run; the alignment-milling archive reaches 97.2% coverage (only the four high-alignment/high-milling corner cells stay empty) and the alignment-clustering archive reaches full coverage. Color is temporal stability.",
+    "asset": "figures/manuscript/main_figure_2.png",
+    "matching_asset": "figures/paper/fig_single_archives.png",
+    "sha256": "6769e25457165d4788a905f7ae282cdabd0f882938b9ae9ac6b0cbf8a0dbe58c"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 3",
+    "caption": "Figure 3. Validated classical single-species representatives: aligned flock, reflecting-boundary mill, compact cluster, and disordered gas. Arrow direction indicates particle heading.",
+    "asset": "figures/manuscript/main_figure_3.png",
+    "matching_asset": "figures/fig_single_representatives.png",
+    "sha256": "043e9a352b04d9aa451f49117436797698c730e875e6c52a19f5a3588874b515"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 4",
+    "caption": "Figure 4. Density dependence in the 360-rule corpus. Lines are medians within density bins and shaded bands are the 10th to 90th percentiles. Ordered states become less common at high density, but the upper tails show that they remain accessible.",
+    "asset": "figures/manuscript/main_figure_4.png",
+    "matching_asset": "figures/expanded/fig_density_dependence.png",
+    "sha256": "cdd44530aa4837642950e7e5e0a15ef6bacc4199b782be6b9ccf09093f2f1f2b"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 5",
+    "caption": "Figure 5. Two-dimensional learned behavior space for 360 single-species simulations. Points are colored by physical quantities that were not used to train the autoencoder. The learned coordinates recover major variation in polarization, milling, aggregation, density modulation, and density.",
+    "asset": "figures/manuscript/main_figure_5.png",
+    "matching_asset": "figures/expanded/fig_single_learned_space.png",
+    "sha256": "f902e7ef2f3050341ef5ac0613c6723bf770c98c42dac304970a6a1061ecda6a"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 6",
+    "caption": "Figure 6. Comparison of the learned map with the classical eight-vector. (a) Independent-test trustworthiness against the full 51-dimensional trajectory descriptor. (b) Independent-test R\u00b2 for predicting each learned axis from the eight classical measures. (c) Examples of rule pairs that are close in classical-measure space but well separated in the learned plane.",
+    "asset": "figures/manuscript/main_figure_6.png",
+    "matching_asset": null,
+    "sha256": "3dac1c6bc35b42de34adbb5b55bd2dda19184c40206355d7d2fd6783563aa15b"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 7",
+    "caption": "Figure 7. Local sensitivity spectra. Eigenvalues are normalized by the largest value in each regime. Only the top two to four directions lie above the seed-to-seed noise floor. The shaded final column shows the much narrower inverse-variance spectrum of parameters stored in the learned archive.",
+    "asset": "figures/manuscript/main_figure_7.png",
+    "matching_asset": null,
+    "sha256": "36582241219efb44aa93f77b6061ee3b00346bab65c2a93d58520c80dcd838e1"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 8",
+    "caption": "Figure 8. Long-horizon validation of the rotating non-reciprocal state against a matched reciprocal control and the best reciprocal search result. Persistent rotation remains much stronger in the non-reciprocal system.",
+    "asset": "figures/manuscript/main_figure_8.png",
+    "matching_asset": "figures/paper/fig_chirality_validation.png",
+    "sha256": "53daf2b44ca957765ce40dfa162eaff687f2d7e2abfe052fc8b7384f4116ac65"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 9",
+    "caption": "Figure 9. Response to antisymmetric two-species coupling. (a) Persistent chirality and (b) rotation rate over J\u2090 and C\u2090, with all other parameters fixed. Rotation vanishes at the reciprocal point J\u2090 = C\u2090 = 0. (c) Along C\u2090 = 0, rotation rises when |J\u2090| is of order one; the coarse-grid susceptibility peak is near J\u2090 = 1.33.",
+    "asset": "figures/manuscript/main_figure_9.png",
+    "matching_asset": "figures/expanded/fig_nonreciprocity.png",
+    "sha256": "016ff8d42c847817de715599fc0aa02930ce692dcb7999b9f00af74e3b4cbfd4"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 10",
+    "caption": "Figure 10. Finite-size check of the noise-driven order-disorder cut. (a) The susceptibility peak stays near \u03b7 = 0.50 as N increases. (b) Doubling the run length shows that most peak-height growth is a finite-window effect. (c) The number of effectively independent samples falls as autocorrelation time grows. (d) Polarization remains unimodal near the peak. The evidence supports a transition location near \u03b7 = 0.50 but does not determine its order.",
+    "asset": "figures/manuscript/main_figure_10.png",
+    "matching_asset": "figures/expanded/fig_finite_size.png",
+    "sha256": "c1920d18e236b045eb64855dac697a18f8853d72f81347110ce79f54a46bf0a1"
+  },
+  {
+    "document": "Wen_Bonabeau_Physica_A_Revised_v2.docx",
+    "figure": "Figure 11",
+    "caption": "Figure 11. Full-space sensitivity-ridge analysis. (a) Example traced ridges. (b) On the non-reciprocity cut, the descriptor-sensitivity maximum occurs near the onset of rotation, while the rotation-rate susceptibility peaks later. (c) The same displacement occurs on the noise cut. (d) Patch sampling shows that the single-species ridges behave as extended hypersurfaces, whereas the chiral ridge terminates in most tangent directions. Details and controls are in Supplementary Section S10.",
+    "asset": "figures/manuscript/main_figure_11.png",
+    "matching_asset": null,
+    "sha256": "8abc800cfda1dd4ae698cfd91d54cdb1e5b01474886327d2bdef0e2df4260ef2"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S1",
+    "caption": "Supplementary Figure S1. Polar alignment in the Vicsek-like validation limit as a function of noise. Points are means over eight seeds; error bars are one standard deviation.",
+    "asset": "figures/manuscript/supplement_figure_S1.png",
+    "matching_asset": "figures/fig_noise_sweep.png",
+    "sha256": "d7857ca28d242151d0b71ed09e920bbf93bd9a0567d07c81506d7f6b9db72e5a"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S2",
+    "caption": "Supplementary Figure S2. Classical single-species search and robustness checks. (a) Best scalar objective from Differential Evolution, a small QD run, and the pooled QD archive. (b) Defining order parameters across box sizes at fixed density. (c) One-at-a-time parameter sweeps.",
+    "asset": "figures/manuscript/supplement_figure_S2.png",
+    "matching_asset": "figures/paper/fig_single_method_robustness.png",
+    "sha256": "c4aecce0eca4d88078471a4e763e8a02147e2615701850726626daa357cf2b5a"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S3",
+    "caption": "Supplementary Figure S3. Eight high-density examples from the density-expanded corpus. Arrows show particle headings. Density fractions range from 0.51 to 0.68 and particle counts from 151 to 201. The panels include a dense flock, wall-supported aggregates, density-modulated states, a sixfold-rich state, a nematic-rich state, and dense near-uniform states.",
+    "asset": "figures/manuscript/supplement_figure_S3.png",
+    "matching_asset": "figures/expanded/fig_high_density_examples.png",
+    "sha256": "aa7d216b1dfe7e0566e38014d10ca2f99c8fa098e5960e8777ea2c3d4860fe6e"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S4",
+    "caption": "Supplementary Figure S4. Independent validation of the two-dimensional single-species representation. (a) Trustworthiness and ten-neighbor overlap for the autoencoder and PCA on the 72-rule test set. (b) Pairwise-distance agreement across four autoencoder initializations on the model-selection validation and independent test sets; error bars show the observed range. (c) Test reconstruction error. The 72 test rules were generated after all representation choices were fixed.",
+    "asset": "figures/manuscript/supplement_figure_S4.png",
+    "matching_asset": null,
+    "sha256": "327de3d9d087da9e64f008e587569b9ccff7cf79666e679be284f2ec00aabb76"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S5",
+    "caption": "Supplementary Figure S5. Effect of latent dimension on the independent 72-rule test set. Reconstruction error decreases from two to six dimensions, while neighborhood preservation improves mainly through four dimensions. Model initialization at each dimension is selected only on the original validation partition.",
+    "asset": "figures/manuscript/supplement_figure_S5.png",
+    "matching_asset": null,
+    "sha256": "ef1f22b3bb56f13f1ad4cee6156434ae46a890cf76a7bedc767046d2a5c53ee9"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S6",
+    "caption": "Supplementary Figure S6. One representative configuration from each of twelve learned single-species regions. Arrows show headings. The regions include coherent flocks, diffuse moving states, compact and wall-supported aggregates, density-modulated states, dense homogeneous states, dense structured states, and mixed polar states.",
+    "asset": "figures/manuscript/supplement_figure_S6.png",
+    "matching_asset": "figures/expanded/fig_single_learned_examples.png",
+    "sha256": "2c5241884ce1be6ebe8d28d678e36c2f5a6e3bb905a3892cc2b5c4d4a496d77a"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S7",
+    "caption": "Supplementary Figure S7. Local parameter sensitivity. (a) Normalized local sensitivity spectra. (b) Mean absolute standardized derivatives by regime and parameter. (c) Inverse-variance spectrum of elite parameters in the learned archive.",
+    "asset": "figures/manuscript/supplement_figure_S7.png",
+    "matching_asset": null,
+    "sha256": "7746a8d8ac3ba4561b21cd3a8a6e8dfb7e3fee8ba472585914af84e232a356c1"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S8",
+    "caption": "Supplementary Figure S8. Drift-chirality archives for two particle types after 64,000 evaluations. (a) Reciprocal cross-species couplings, 77.1% coverage. (b) Full family with antisymmetric alignment and force components, 81.9% coverage. Both short-horizon archives populate the high-chirality region; persistent rotation is distinguished only by the longer matched-control tests in main text Section 7.2.",
+    "asset": "figures/manuscript/supplement_figure_S8.png",
+    "matching_asset": "figures/paper/fig_multi_archives.png",
+    "sha256": "b372c529eaa414c3a842aeaa3e3c6a2402aa37fe46d85864ac4660e25e720a7d"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S9",
+    "caption": "Supplementary Figure S9. Long-horizon rotation of the selected non-reciprocal rule. (a) Windowed rotation rate remains stationary to 2,000 steps. (b) Local linearity and polarization show no downward trend. (c) Median rotation rate does not decrease toward zero as particle number increases from 15 to 244 and approaches about 0.24 rad/step at larger N.",
+    "asset": "figures/manuscript/supplement_figure_S9.png",
+    "matching_asset": "figures/expanded/fig_chirality_decay.png",
+    "sha256": "466e038fa11993b5a4c012e92c91f61f4520a631a074fcee176f7388cc46ba8e"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S10",
+    "caption": "Supplementary Figure S10. Species-aware learned behavior space. Panels show (a) reciprocal versus non-reciprocal source, (b) center-of-mass drift, (c) persistent chirality, and (d) species segregation. Reciprocal and non-reciprocal rules overlap when they produce similar trajectories.",
+    "asset": "figures/manuscript/supplement_figure_S10.png",
+    "matching_asset": "figures/expanded/fig_multi_learned_space.png",
+    "sha256": "5a6c13ee59e8165d8730996b3094ab04dc6abf175c80ef99ac0f893ee3300406"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S11",
+    "caption": "Supplementary Figure S11. One representative configuration from each of ten learned two-species regions. Blue and red indicate species. The regions include translating mixed flocks, weakly moving gases, clustered mixtures, partially segregated aggregates, and curved or chiral motion.",
+    "asset": "figures/manuscript/supplement_figure_S11.png",
+    "matching_asset": "figures/expanded/fig_multi_learned_examples.png",
+    "sha256": "bdd02e7094bb89af972d6552d913ad833a1861409718811fdccd7ff1ccdbef93"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S12",
+    "caption": "Supplementary Figure S12. Champion fitness over twenty independent validation seeds. Black bars are medians. Milling, the nematic objective, the phase-separation objective, and chiral rotation have substantial low-fitness tails; the other objectives are reproduced on nearly every seed.",
+    "asset": "figures/manuscript/supplement_figure_S12.png",
+    "matching_asset": "figures/expanded/fig_champion_per_seed.png",
+    "sha256": "16acc6abae1606876934301291afac202cfd4f4a240d185e4eb32d557624e12b"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S13",
+    "caption": "Supplementary Figure S13. Objective champions at representative validation seeds. Single-species panels use dark heading arrows; two-species panels color arrows by particle type. Titles show validated fitness. The panels labeled hexatic crystal, density waves, phase separation, and active turbulence are named for their objective functions and should be interpreted through those defining measures.",
+    "asset": "figures/manuscript/supplement_figure_S13.png",
+    "matching_asset": "figures/fig_objective_champions.png",
+    "sha256": "273453664a35f3bad10f3dee5fec095522080b814323e1aa2adef63643587dbb"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S14",
+    "caption": "Supplementary Figure S14. Boundary-condition test for the two objectives that use reflecting walls by default. Alignment remains near one under periodic boundaries, while milling drops sharply, confirming its wall dependence. The other objectives are periodic by construction.",
+    "asset": "figures/manuscript/supplement_figure_S14.png",
+    "matching_asset": "figures/fig_objective_champions_periodic.png",
+    "sha256": "22a5ca09284cceae0540cdc7bd3340010012d267c04b2f564754680026808195"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S15",
+    "caption": "Supplementary Figure S15. Transition and crossover diagnostics along parameter cuts. Top: noise-driven loss of polar order. Bottom: density-driven loss of polar order. Columns show the order parameter, its across-seed fluctuation measure with Binder cumulant, and the descriptor change rate. Different peak locations indicate that the measures can respond to different reorganizations.",
+    "asset": "figures/manuscript/supplement_figure_S15.png",
+    "matching_asset": "figures/expanded/fig_phase_transitions.png",
+    "sha256": "65cad228e820811ce45a8fe29cde868b5c97e42cd438f5b4ca2e71e2b9382705"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S16",
+    "caption": "Supplementary Figure S16. Performance and classification of the sensitivity-ridge search. (a) Descriptor-sensitivity and order-parameter peak locations differ by a sign-varying amount across six cuts. (b) False-positive rates for the general sensitivity detector and the mixture-specific detector. (c) The mixture-specific descriptor reveals two fully classified reciprocal-mixture boundaries and three additional reciprocity-dependent candidates. (d) Outcomes of the reciprocal, single-species, and species-swap controls for each ridge type.",
+    "asset": "figures/manuscript/supplement_figure_S16.png",
+    "matching_asset": null,
+    "sha256": "535c71634a419d30c5876cd6faa181b4b79f7253f040132b4f54e8470c83fbb2"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S17",
+    "caption": "Supplementary Figure S17. Archive coverage versus simulator evaluations. The single-species archives saturate at 144/144 cells for alignment-clustering and 140/144 for alignment-milling. CMA-MAE reaches the same high coverage with fewer evaluations. The two-species reciprocal and non-reciprocal archives reach 77.1% and 81.9% coverage.",
+    "asset": "figures/manuscript/supplement_figure_S17.png",
+    "matching_asset": "figures/paper/fig_archive_coverage.png",
+    "sha256": "5a29175f362a5898da58a051e1796e2d096de052e2b5b00f6d87675e6426d041"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S18",
+    "caption": "Supplementary Figure S18. Elite single-species rules in alignment, milling, and clustering coordinates.",
+    "asset": "figures/manuscript/supplement_figure_S18.png",
+    "matching_asset": "figures/fig_single_repertoire_3d.png",
+    "sha256": "89d0381beb258e0e4a7c41db6b61b2ed6fa66c4a12a7fafb1396c80e3e21ce7d"
+  },
+  {
+    "document": "Wen_Bonabeau_Supplementary_Information_Physica_A_Revised.docx",
+    "figure": "Supplementary Figure S19",
+    "caption": "Supplementary Figure S19. Normalized parameter values of the aligned, milling, clustered, and disordered representatives.",
+    "asset": "figures/manuscript/supplement_figure_S19.png",
+    "matching_asset": "figures/fig_single_parameter_profiles.png",
+    "sha256": "ef5674f796f7607b2d6362ecec8fdda0863e6e1ba5e55e360d0d1a7aedc5cea3"
+  }
+]

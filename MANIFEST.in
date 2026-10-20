@@ -1,0 +1,12 @@
+include README.md CITATION.cff
+include LICENSE requirements.txt requirements-audit.txt
+recursive-include configs *.json
+recursive-include docs *.md *.json *.csv
+recursive-include experiments *.py
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include results *.csv *.json *.npz *.pt *.pkl *.gz
+recursive-include figures *.png *.pdf *.json
+exclude .DS_Store
+

@@ -1,0 +1,90 @@
+[
+  {
+    "objective": "aligned_flock",
+    "gif": "figures/gifs/aligned_flock_periodic.gif",
+    "fitness": 0.9962522324927158,
+    "blurb": "Maximal polar alignment: a single coherent flock.",
+    "kind": "single",
+    "size_kb": 1607
+  },
+  {
+    "objective": "milling_vortex",
+    "gif": "figures/gifs/milling_vortex_periodic.gif",
+    "fitness": 0.10255011219812898,
+    "blurb": "Rotating mill: high angular momentum, low net polarization.",
+    "kind": "single",
+    "size_kb": 1664
+  },
+  {
+    "objective": "dense_cluster",
+    "gif": "figures/gifs/dense_cluster_periodic.gif",
+    "fitness": 0.4918211524644418,
+    "blurb": "Compact aggregate far above the uniform-density reference.",
+    "kind": "single",
+    "size_kb": 1283
+  },
+  {
+    "objective": "nematic_lanes",
+    "gif": "figures/gifs/nematic_lanes_periodic.gif",
+    "fitness": 0.21123436406231338,
+    "blurb": "Nematic order without polarity: counter-propagating lanes.",
+    "kind": "single",
+    "size_kb": 1231
+  },
+  {
+    "objective": "hexatic_crystal",
+    "gif": "figures/gifs/hexatic_crystal_periodic.gif",
+    "fitness": 0.8517768852292479,
+    "blurb": "Sixfold bond-orientational (crystalline) order [new pattern].",
+    "kind": "single",
+    "size_kb": 4222
+  },
+  {
+    "objective": "density_waves",
+    "gif": "figures/gifs/density_waves_periodic.gif",
+    "fitness": 0.853848518523383,
+    "blurb": "Strong low-wavenumber density modulation: banding [new pattern].",
+    "kind": "single",
+    "size_kb": 1156
+  },
+  {
+    "objective": "phase_separation",
+    "gif": "figures/gifs/phase_separation_periodic.gif",
+    "fitness": 0.9883434982063461,
+    "blurb": "Clusters coexisting with voids: motility-induced phase separation [new pattern].",
+    "kind": "single",
+    "size_kb": 1557
+  },
+  {
+    "objective": "active_turbulence",
+    "gif": "figures/gifs/active_turbulence_periodic.gif",
+    "fitness": 0.9519571267026945,
+    "blurb": "Persistently disordered active flow [new pattern].",
+    "kind": "single",
+    "size_kb": 3063
+  },
+  {
+    "objective": "travelling_mixture",
+    "gif": "figures/gifs/travelling_mixture_periodic.gif",
+    "fitness": 0.9999829066667135,
+    "blurb": "Coherently translating two-species band.",
+    "kind": "two",
+    "size_kb": 1574
+  },
+  {
+    "objective": "chiral_rotation",
+    "gif": "figures/gifs/chiral_rotation_periodic.gif",
+    "fitness": 0.6157990910400613,
+    "blurb": "Persistent global rotation driven by non-reciprocal coupling.",
+    "kind": "two",
+    "size_kb": 2049
+  },
+  {
+    "objective": "species_segregation",
+    "gif": "figures/gifs/species_segregation_periodic.gif",
+    "fitness": 0.4308451756588906,
+    "blurb": "Demixing of the two particle types.",
+    "kind": "two",
+    "size_kb": 2290
+  }
+]

@@ -1,0 +1,4 @@
+budget,replicate,method,true_calls,coverage,num_elites,mean_quality
+30,0,surrogate,10,0.1725,69,0.9566029948070827
+30,0,surrogate,20,0.175,70,0.9575920608359646
+30,0,surrogate,30,0.1825,73,0.9591182250012464

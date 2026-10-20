@@ -1,0 +1,30 @@
+{
+  "calls": 1000,
+  "by_eps": [
+    {
+      "eps": 0.0,
+      "true_mean": 0.5683,
+      "true_sd": 0.0115,
+      "perc_mean": 0.5683,
+      "perc_sd": 0.0115
+    },
+    {
+      "eps": 0.15,
+      "true_mean": 0.5083,
+      "true_sd": 0.0232,
+      "perc_mean": 0.71,
+      "perc_sd": 0.0066
+    },
+    {
+      "eps": 0.3,
+      "true_mean": 0.4817,
+      "true_sd": 0.0321,
+      "perc_mean": 0.7533,
+      "perc_sd": 0.0076
+    }
+  ],
+  "true_cov_eps0": 0.5683333333333334,
+  "true_cov_eps0.30": 0.4816666666666667,
+  "relative_true_drop_at_0.30": 0.15249266862170086,
+  "perceived_rises": true
+}

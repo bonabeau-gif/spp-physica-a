@@ -1,0 +1,38 @@
+[
+  {
+    "reference": "descriptor_51d",
+    "method": "autoencoder_2d",
+    "trustworthiness": 0.8913565891472868,
+    "trust_sd": 0.010108644824540255
+  },
+  {
+    "reference": "descriptor_51d",
+    "method": "classical_8vec_pca2d",
+    "trustworthiness": 0.7427519379844961,
+    "trust_sd": 0.011263724220231074
+  },
+  {
+    "reference": "descriptor_51d",
+    "method": "classical_8vec_umap2d",
+    "trustworthiness": 0.7804031007751938,
+    "trust_sd": 0.006233943981834929
+  },
+  {
+    "reference": "classical_8vec",
+    "method": "autoencoder_2d",
+    "trustworthiness": 0.8370736434108527,
+    "trust_sd": 0.010103363935364783
+  },
+  {
+    "reference": "classical_8vec",
+    "method": "classical_8vec_pca2d",
+    "trustworthiness": 0.8693023255813953,
+    "trust_sd": 0.009773615069711538
+  },
+  {
+    "reference": "classical_8vec",
+    "method": "classical_8vec_umap2d",
+    "trustworthiness": 0.9273449612403101,
+    "trust_sd": 0.009731504930494144
+  }
+]

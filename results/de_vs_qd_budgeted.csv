@@ -1,0 +1,10 @@
+objective,method,best
+alignment,DE (144),1.0
+alignment,QD (160),0.9999999320602558
+alignment,QD pooled (640),0.9999999999999996
+milling,DE (144),0.1234005693668534
+milling,QD (160),0.37317630235341254
+milling,QD pooled (640),0.37317630235341254
+clustering,DE (144),0.6014569171689524
+clustering,QD (160),0.5432192428616041
+clustering,QD pooled (640),0.6620624868957488

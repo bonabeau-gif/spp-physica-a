@@ -1,0 +1,109 @@
+{
+  "per_family_types": [
+    {
+      "family": "A_chiral_Ja",
+      "n_points": 6,
+      "dominant_obs": "P_plus",
+      "rep_b": 3.3962924465084012,
+      "top_loadings": [
+        "rho",
+        "J_a",
+        "f_B",
+        "J_s"
+      ],
+      "reciprocal": {
+        "obs": "P_plus",
+        "orig_jump": 0.08768473620179001,
+        "control_jump": 0.003938136399599279,
+        "jump_ratio": 0.04491245078888525,
+        "survives": false
+      },
+      "single_species": {
+        "obs": "P_plus",
+        "orig_jump": 0.08768473620179001,
+        "control_jump": 0.0002719384801522784,
+        "jump_ratio": 0.0031013206166973332,
+        "survives": false
+      },
+      "is_mixture": true
+    },
+    {
+      "family": "B_force_Ca",
+      "n_points": 6,
+      "dominant_obs": "P_minus",
+      "rep_b": 5.931222163636921,
+      "top_loadings": [
+        "J_s",
+        "J_a",
+        "eta",
+        "rho"
+      ],
+      "reciprocal": {
+        "obs": "P_minus",
+        "orig_jump": 0.5709891059283995,
+        "control_jump": 0.5778839835242705,
+        "jump_ratio": 1.0120753224961452,
+        "survives": true
+      },
+      "single_species": {
+        "obs": "P_minus",
+        "orig_jump": 0.5709891059283995,
+        "control_jump": 0.40987705960450227,
+        "jump_ratio": 0.7178369172877,
+        "survives": true
+      },
+      "is_mixture": false
+    },
+    {
+      "family": "C_comp_fB",
+      "n_points": 6,
+      "dominant_obs": "alpha_WC",
+      "rep_b": 3.048384955832377,
+      "top_loadings": [
+        "rho",
+        "ra_ratio"
+      ],
+      "reciprocal": {
+        "obs": "alpha_WC",
+        "orig_jump": 0.5940800785077407,
+        "control_jump": 0.3603147932819313,
+        "jump_ratio": 0.6065087962333288,
+        "survives": true
+      },
+      "single_species": {
+        "obs": "alpha_WC",
+        "orig_jump": 0.5940800785077407,
+        "control_jump": 1.6102621632102398,
+        "jump_ratio": 2.710513652056856,
+        "survives": true
+      },
+      "is_mixture": false
+    }
+  ],
+  "n_mixture_types": 1,
+  "data_driven_labels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    -1
+  ],
+  "m6_pass": false,
+  "credentialing": {
+    "T3": "pass",
+    "T4": "pass"
+  }
+}

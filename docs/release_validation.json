@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "tests": {
+    "passed": 19,
+    "command": "python -m pytest -q"
+  },
+  "installed_dependencies": "analysis,dev",
+  "checks": [
+    "single-species CLI trajectory and diagnostics",
+    "two-species CLI trajectory and diagnostics",
+    "CMA-MAE scheduler/archive interface",
+    "deterministic serial/parallel search with batch size 1",
+    "full 72-rule independent test corpus and four-initialization representation audit",
+    "75/25/26 mixture training/validation/test audit",
+    "all 11 main and 19 supplementary figures regenerated",
+    "source distribution and wheel built",
+    "Python sources parsed and portable paths checked",
+    "bundled data shapes, archive cells, split disjointness and manuscript image hashes checked"
+  ],
+  "full_search_campaigns_rerun": false,
+  "independent_audit_report": "results/independent_validation/report.json",
+  "numerical_replay_notes": "docs/NUMERICS.md"
+}

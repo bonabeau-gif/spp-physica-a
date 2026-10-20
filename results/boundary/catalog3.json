@@ -1,0 +1,70 @@
+{
+  "demix_trace": {
+    "seed_family": "D_demix_Cs",
+    "n_points": 0,
+    "terminated_by": "ds_min",
+    "manifold_dim": [],
+    "bvals": [],
+    "points": [],
+    "normals": []
+  },
+  "demix_types": [
+    {
+      "family": "D_demix_Cs",
+      "n_points": 6,
+      "dominant_obs": "D",
+      "rep_b": 8.666798087896135,
+      "top_loadings": [
+        "r1_ratio",
+        "B",
+        "ra_ratio",
+        "eta"
+      ],
+      "reciprocal": {
+        "obs": "D",
+        "orig_jump": 0.8320908994828391,
+        "control_jump": 0.8320908994828391,
+        "jump_ratio": 1.0,
+        "survives": true
+      },
+      "single_species": {
+        "obs": "D",
+        "orig_jump": 0.8320908994828391,
+        "control_jump": 0.6552145702597872,
+        "jump_ratio": 0.78743148214578,
+        "survives": true
+      },
+      "is_mixture": false
+    },
+    {
+      "family": "E_demix_Ca",
+      "n_points": 6,
+      "dominant_obs": "P_plus",
+      "rep_b": 2.956293342419281,
+      "top_loadings": [
+        "B",
+        "r1_ratio",
+        "ra_ratio",
+        "alpha"
+      ],
+      "reciprocal": {
+        "obs": "P_plus",
+        "orig_jump": 0.3186193446242082,
+        "control_jump": 0.4143620940047014,
+        "jump_ratio": 1.300492581495376,
+        "survives": true
+      },
+      "single_species": {
+        "obs": "P_plus",
+        "orig_jump": 0.3186193446242082,
+        "control_jump": 0.34014804016632727,
+        "jump_ratio": 1.067568701980449,
+        "survives": true
+      },
+      "is_mixture": false
+    }
+  ],
+  "chiral_Ja": "confirmed mixture (campaign2 Family A)",
+  "n_mixture_total": 1,
+  "m6_pass": false
+}

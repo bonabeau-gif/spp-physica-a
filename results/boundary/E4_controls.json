@@ -1,0 +1,94 @@
+{
+  "config_hash": "118e8eff1994",
+  "types": [
+    {
+      "type": "chiral_Ja",
+      "dominant_obs": "P_plus",
+      "orig_jump": 0.08768473620179001,
+      "C1_reciprocal": {
+        "jump_ratio": 0.04491245078888525,
+        "survives": false
+      },
+      "C2_single_subspace": {
+        "b_single": 4.046313264473861,
+        "found": true
+      },
+      "C3_species_swap": {
+        "jump_swap": 0.08433392578990229,
+        "ratio": 0.9617857045931407,
+        "invariant": true
+      },
+      "fB0_sanity": {
+        "jump_ratio": 0.0031013206166973332
+      },
+      "label": "investigate (coincidence of two boundaries)"
+    },
+    {
+      "type": "adhesion",
+      "dominant_obs": "alpha_WC",
+      "orig_jump": 0.4341534295421314,
+      "C1_reciprocal": {
+        "jump_ratio": 1.0307592582958003,
+        "survives": true
+      },
+      "C2_single_subspace": {
+        "b_single": 5.199232695815217,
+        "found": true
+      },
+      "C3_species_swap": {
+        "jump_swap": 0.5050193447084297,
+        "ratio": 1.1632278138192649,
+        "invariant": true
+      },
+      "fB0_sanity": {
+        "jump_ratio": 1.8782445944233477
+      },
+      "label": "single-species boundary in disguise"
+    },
+    {
+      "type": "D_demix_Cs",
+      "dominant_obs": "D",
+      "orig_jump": 0.8320908994828391,
+      "C1_reciprocal": {
+        "jump_ratio": 1.0,
+        "survives": true
+      },
+      "C2_single_subspace": {
+        "b_single": 3.234409655781017,
+        "found": true
+      },
+      "C3_species_swap": {
+        "jump_swap": 0.8866064833195109,
+        "ratio": 1.0655163803264214,
+        "invariant": true
+      },
+      "fB0_sanity": {
+        "jump_ratio": 0.78743148214578
+      },
+      "label": "single-species boundary in disguise"
+    },
+    {
+      "type": "E_demix_Ca",
+      "dominant_obs": "P_plus",
+      "orig_jump": 0.3186193446242082,
+      "C1_reciprocal": {
+        "jump_ratio": 1.300492581495376,
+        "survives": true
+      },
+      "C2_single_subspace": {
+        "b_single": 3.234409655781017,
+        "found": true
+      },
+      "C3_species_swap": {
+        "jump_swap": 0.2820067605246262,
+        "ratio": 0.8850898894956792,
+        "invariant": true
+      },
+      "fB0_sanity": {
+        "jump_ratio": 1.067568701980449
+      },
+      "label": "single-species boundary in disguise"
+    }
+  ],
+  "c3_all_invariant": true
+}

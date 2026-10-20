@@ -1,0 +1,12 @@
+objective,kind,val_mean,val_sd,n_params,n_at_bound,noise,at_lower,at_upper
+aligned_flock,single,1.0,0.0,9,1,0.0,noise,
+milling_vortex,single,0.095,0.021,9,4,0.321,"rho,force_strength","inertia,adhesion"
+dense_cluster,single,0.551,0.223,9,1,0.123,rho,
+nematic_lanes,single,0.194,0.043,9,3,0.0,"rho,v0,noise",
+hexatic_crystal,single,0.768,0.155,9,1,0.011,,rho
+density_waves,single,0.814,0.081,9,2,0.392,rho,adhesion
+phase_separation,single,0.754,0.354,9,1,0.054,,adhesion
+active_turbulence,single,0.99,0.002,9,2,0.0,noise,adhesion
+travelling_mixture,two,1.0,0.0,14,4,0.0,"force_strength,noise,fraction_B",alignment_range_ratio
+chiral_rotation,two,0.597,0.393,14,3,0.0,"force_strength,noise",alignment_range_ratio
+species_segregation,two,0.497,0.077,14,2,0.159,"alignment_strength,force_symmetric",

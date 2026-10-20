@@ -1,0 +1,88 @@
+{
+  "three_method": [
+    {
+      "method": "direct",
+      "coverage_mean": 0.19083333333333333,
+      "coverage_sd": 0.00983192080250176,
+      "elites_mean": 76.33333333333333,
+      "elites_sd": 3.932768321000701,
+      "quality_mean": 0.9560693293588742,
+      "quality_sd": 0.003742624418842192,
+      "n": 6
+    },
+    {
+      "method": "random",
+      "coverage_mean": 0.18791666666666665,
+      "coverage_sd": 0.010175542573576444,
+      "elites_mean": 75.16666666666667,
+      "elites_sd": 4.070217029430578,
+      "quality_mean": 0.9561667021172288,
+      "quality_sd": 0.004083311208852501,
+      "n": 6
+    },
+    {
+      "method": "surrogate",
+      "coverage_mean": 0.18333333333333335,
+      "coverage_sd": 0.0071879528842825995,
+      "elites_mean": 73.33333333333333,
+      "elites_sd": 2.875181153713044,
+      "quality_mean": 0.9599948696691109,
+      "quality_sd": 0.003759564196598835,
+      "n": 6
+    }
+  ],
+  "noise_injection": [
+    {
+      "eps": 0.0,
+      "true_cov_mean": 0.19666666666666666,
+      "true_cov_sd": 0.008010409893798613,
+      "perceived_cov_mean": 0.19666666666666666,
+      "quality_mean": 0.9554031197134636
+    },
+    {
+      "eps": 0.02,
+      "true_cov_mean": 0.19041666666666668,
+      "true_cov_sd": 0.006785400995274104,
+      "perceived_cov_mean": 0.19291666666666665,
+      "quality_mean": 0.955826769239898
+    },
+    {
+      "eps": 0.05,
+      "true_cov_mean": 0.19125,
+      "true_cov_sd": 0.009585144756340416,
+      "perceived_cov_mean": 0.1975,
+      "quality_mean": 0.9552645251022295
+    },
+    {
+      "eps": 0.1,
+      "true_cov_mean": 0.19000000000000003,
+      "true_cov_sd": 0.0054772255750516665,
+      "perceived_cov_mean": 0.2041666666666667,
+      "quality_mean": 0.9564172672977428
+    },
+    {
+      "eps": 0.15,
+      "true_cov_mean": 0.19208333333333336,
+      "true_cov_sd": 0.0053424401416082064,
+      "perceived_cov_mean": 0.20541666666666666,
+      "quality_mean": 0.9558858761935404
+    },
+    {
+      "eps": 0.2,
+      "true_cov_mean": 0.18791666666666665,
+      "true_cov_sd": 0.007651252620758694,
+      "perceived_cov_mean": 0.21125000000000002,
+      "quality_mean": 0.9558224278620783
+    },
+    {
+      "eps": 0.3,
+      "true_cov_mean": 0.18916666666666668,
+      "true_cov_sd": 0.00816496580927727,
+      "perceived_cov_mean": 0.21958333333333332,
+      "quality_mean": 0.955949472889596
+    }
+  ],
+  "coverage_at_eps0": 0.19666666666666666,
+  "coverage_at_eps0.15": 0.19208333333333336,
+  "relative_drop_at_0.15": 0.02330508474576254
+}

@@ -1,0 +1,81 @@
+{
+  "summary": [
+    {
+      "budget": 30,
+      "method": "direct",
+      "coverage_mean": 0.19083333333333333,
+      "coverage_sd": 0.009831920802501762,
+      "quality_mean": 0.9560693293588742,
+      "n": 6
+    },
+    {
+      "budget": 30,
+      "method": "random",
+      "coverage_mean": 0.18791666666666665,
+      "coverage_sd": 0.010175542573576434,
+      "quality_mean": 0.9561667021172288,
+      "n": 6
+    },
+    {
+      "budget": 30,
+      "method": "surrogate",
+      "coverage_mean": 0.18333333333333335,
+      "coverage_sd": 0.007187952884282601,
+      "quality_mean": 0.9599948696691109,
+      "n": 6
+    },
+    {
+      "budget": 300,
+      "method": "direct",
+      "coverage_mean": 0.36812500000000004,
+      "coverage_sd": 0.02860470532389151,
+      "quality_mean": 0.9550598750769848,
+      "n": 4
+    },
+    {
+      "budget": 300,
+      "method": "random",
+      "coverage_mean": 0.305625,
+      "coverage_sd": 0.01048312135450761,
+      "quality_mean": 0.9554093400682555,
+      "n": 4
+    },
+    {
+      "budget": 300,
+      "method": "surrogate",
+      "coverage_mean": 0.26,
+      "coverage_sd": 0.007905694150420955,
+      "quality_mean": 0.9696878964335874,
+      "n": 4
+    },
+    {
+      "budget": 3000,
+      "method": "direct",
+      "coverage_mean": 0.7408333333333333,
+      "coverage_sd": 0.012583057392117902,
+      "quality_mean": 0.9699800696505706,
+      "n": 3
+    },
+    {
+      "budget": 3000,
+      "method": "random",
+      "coverage_mean": 0.5658333333333333,
+      "coverage_sd": 0.015275252316519477,
+      "quality_mean": 0.9582686137515921,
+      "n": 3
+    },
+    {
+      "budget": 3000,
+      "method": "surrogate",
+      "coverage_mean": 0.7999999999999999,
+      "coverage_sd": 0.021360009363293863,
+      "quality_mean": 0.9743420832064231,
+      "n": 3
+    }
+  ],
+  "gap_by_budget": {
+    "30": -0.007499999999999979,
+    "300": -0.10812500000000003,
+    "3000": 0.05916666666666659
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "selected_seed": 2,
+  "autoencoder": {
+    "train_mse": 0.16756640374660492,
+    "test_mse": 0.33597052097320557,
+    "trustworthiness": 0.8975968992248062,
+    "knn_overlap": 0.5875,
+    "epochs": 450.0
+  },
+  "pca": {
+    "explained_variance_2d": 0.5718966722488403,
+    "trustworthiness_test": 0.846453488372093,
+    "knn_overlap_test": 0.49375
+  },
+  "silhouette_12": 0.42617234046247254,
+  "latent_lo": [
+    -3.7088808155059816,
+    -5.150646166801453
+  ],
+  "latent_hi": [
+    4.13248109817505,
+    4.044985721111302
+  ]
+}

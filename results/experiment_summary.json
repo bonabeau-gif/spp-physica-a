@@ -1,0 +1,14 @@
+{
+  "quick": false,
+  "single_alignment_milling_elites": 69,
+  "single_alignment_clustering_elites": 67,
+  "multi_nonreciprocal_elites": 48,
+  "multi_reciprocal_elites": 38,
+  "single_max_phi": 0.9999999999999996,
+  "single_max_milling": 0.4951730719374373,
+  "single_max_clustering": 6.620624868957488,
+  "multi_max_drift_nonreciprocal": 0.9999999999999992,
+  "multi_max_chirality_nonreciprocal": 0.8791046739921277,
+  "multi_max_drift_reciprocal": 1.0,
+  "multi_max_chirality_reciprocal": 0.4750501044390025
+}

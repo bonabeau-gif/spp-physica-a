@@ -1,0 +1,57 @@
+{
+  "resolved_counts_0.04_corrected": {
+    "aligned": 2,
+    "milling": 2,
+    "clustered": 3,
+    "high_density_aggregate": 3,
+    "density_wave": 4
+  },
+  "resolved_counts_0.04_old": {
+    "aligned": 2,
+    "milling": 1,
+    "clustered": 3,
+    "high_density_aggregate": 3,
+    "density_wave": 3
+  },
+  "range_corrected": [
+    2,
+    4
+  ],
+  "step_size_change": {
+    "aligned": {
+      "min": 2,
+      "max": 4,
+      "at_0.02": 2,
+      "at_0.04": 2,
+      "at_0.08": 4
+    },
+    "clustered": {
+      "min": 2,
+      "max": 4,
+      "at_0.02": 2,
+      "at_0.04": 3,
+      "at_0.08": 4
+    },
+    "density_wave": {
+      "min": 3,
+      "max": 4,
+      "at_0.02": 3,
+      "at_0.04": 4,
+      "at_0.08": 4
+    },
+    "high_density_aggregate": {
+      "min": 3,
+      "max": 5,
+      "at_0.02": 3,
+      "at_0.04": 3,
+      "at_0.08": 5
+    },
+    "milling": {
+      "min": 2,
+      "max": 3,
+      "at_0.02": 2,
+      "at_0.04": 2,
+      "at_0.08": 3
+    }
+  }
+}

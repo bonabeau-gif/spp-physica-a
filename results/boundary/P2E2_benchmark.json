@@ -1,0 +1,168 @@
+{
+  "config": {
+    "D": 9,
+    "M": 16,
+    "sigma": 0.05,
+    "w": 0.07,
+    "b_min": 3.0
+  },
+  "tolerances": {
+    "detect_on_min": 0.75,
+    "detect_off_max": 0.25,
+    "loc_err_max": 0.05,
+    "normal_angle_max": 25.0,
+    "hausdorff_max": 0.06
+  },
+  "results": {
+    "hyperplane": {
+      "geom": "codim1_flat",
+      "b_on_median": 5.534415390234207,
+      "b_off_median": 1.3356151143160564,
+      "detect_rate_on": 1.0,
+      "detect_rate_off": 0.0,
+      "localization_error": 0.0027553482998907697,
+      "normal_angle_deg": 2.560898673741118,
+      "n_traced": 14,
+      "hausdorff_to_truth": 0.027310270952214055,
+      "mean_dist_to_truth": 0.013352694063489299,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.0
+    },
+    "hypersphere": {
+      "geom": "codim1_curved",
+      "b_on_median": 34.51498773031459,
+      "b_off_median": 1.224826475858609,
+      "detect_rate_on": 1.0,
+      "detect_rate_off": 0.0,
+      "localization_error": 2.7755575615628914e-17,
+      "normal_angle_deg": 2.9596495334536472,
+      "n_traced": 11,
+      "hausdorff_to_truth": 0.13828610823416815,
+      "mean_dist_to_truth": 0.058081073395879486,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.0
+    },
+    "intersecting": {
+      "geom": "two_surfaces",
+      "b_on_median": 20.176395543344366,
+      "b_off_median": 1.5753809725430474,
+      "detect_rate_on": 1.0,
+      "detect_rate_off": 0.0,
+      "localization_error": 0.004458247200067045,
+      "normal_angle_deg": 2.265729394689451,
+      "n_traced": 14,
+      "hausdorff_to_truth": 0.02390944243168036,
+      "mean_dist_to_truth": 0.011485391276704868,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.0
+    },
+    "shell": {
+      "geom": "codim1_curved",
+      "b_on_median": 33.84776603738679,
+      "b_off_median": 1.3643361431447447,
+      "detect_rate_on": 1.0,
+      "detect_rate_off": 0.0,
+      "localization_error": 0.0044582471822343095,
+      "normal_angle_deg": 0.8759779828154776,
+      "n_traced": 10,
+      "hausdorff_to_truth": 0.13567091189906777,
+      "mean_dist_to_truth": 0.051081323584908245,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.5
+    },
+    "bounded_patch": {
+      "geom": "bounded_patch",
+      "b_on_median": 31.184849926238478,
+      "b_off_median": 1.3346909376444906,
+      "detect_rate_on": 1.0,
+      "detect_rate_off": 0.0,
+      "localization_error": 0.0027553482998907697,
+      "normal_angle_deg": 2.9223364825485443,
+      "n_traced": 10,
+      "hausdorff_to_truth": 0.14406510322713595,
+      "mean_dist_to_truth": 0.05285770106763739,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.5,
+      "max_dist_from_patch_center": 0.21794542702946626
+    },
+    "crossover": {
+      "geom": "no_boundary",
+      "b_on_median": 1.4493521314449556,
+      "b_off_median": 1.5732124420587925,
+      "detect_rate_on": 0.0,
+      "detect_rate_off": 0.0
+    },
+    "heteroscedastic": {
+      "geom": "codim1_flat",
+      "b_on_median": 3.325970281418834,
+      "b_off_median": 1.6308208672377194,
+      "detect_rate_on": 0.75,
+      "detect_rate_off": 0.0,
+      "localization_error": 0.0027553482998903256,
+      "normal_angle_deg": 5.3333493086339425,
+      "n_traced": 13,
+      "hausdorff_to_truth": 0.030486993458481937,
+      "mean_dist_to_truth": 0.015485350460528671,
+      "terminated_by": "max_steps",
+      "manifold_dim_median": 1.0
+    },
+    "null": {
+      "geom": "null",
+      "b_on_median": 1.3855677958376056,
+      "b_off_median": 1.4452202854740994,
+      "detect_rate_on": 0.0,
+      "detect_rate_off": 0.0
+    }
+  },
+  "verdicts": {
+    "hyperplane": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": true
+    },
+    "hypersphere": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": false
+    },
+    "intersecting": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": true
+    },
+    "shell": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": false
+    },
+    "bounded_patch": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": false,
+      "terminates_near_patch": true
+    },
+    "crossover": {
+      "no_false_boundary": true
+    },
+    "heteroscedastic": {
+      "detected": true,
+      "specific": true,
+      "localized": true,
+      "normal_ok": true,
+      "traced_close": true
+    },
+    "null": {
+      "no_false_boundary": true
+    }
+  }
+}

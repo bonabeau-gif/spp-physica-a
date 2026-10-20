@@ -1,0 +1,29 @@
+{
+  "objective": "alignment",
+  "best_fitness": 0.9999999999999999,
+  "best_parameters": {
+    "rho": 0.3,
+    "v0": 0.030211132519727922,
+    "inertia": 0.0,
+    "interaction_range_ratio": 2.1,
+    "force_strength": 5.0,
+    "adhesion": 0.5620990451621437,
+    "alignment_range_ratio": 16.524530801538678,
+    "alignment_strength": 3.5161199853150915,
+    "noise": 0.0
+  },
+  "best_summary": {
+    "n": 139.0,
+    "phi": 0.9999999999999999,
+    "nematic": 1.0,
+    "milling": 0.0019499534299600287,
+    "clustering": 0.0,
+    "segregation": 0.0,
+    "drift": 1.0,
+    "omega": -4.832937471776239e-33,
+    "rotation_r2": 0.0,
+    "chirality": 0.0,
+    "temporal_stability": 0.9999999999999928
+  },
+  "evaluations": 144
+}

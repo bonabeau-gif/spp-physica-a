@@ -1,0 +1,7 @@
+{
+  "config_hash": "118e8eff1994",
+  "n_random": 24,
+  "n_pass_oracle": 2,
+  "n_confirmed_mixture_by_chance": 0,
+  "chance_mixture_rate": 0.0
+}

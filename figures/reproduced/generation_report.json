@@ -1,0 +1,152 @@
+[
+  {
+    "figure": "main_01",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "main_03",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "main_06",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "supp_04",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "supp_05",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "main_07",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "supp_07",
+    "source": "bundled numerical results",
+    "generated": true
+  },
+  {
+    "figure": "main_02",
+    "source": "figures/paper/fig_single_archives.png",
+    "generated": true
+  },
+  {
+    "figure": "main_08",
+    "source": "figures/paper/fig_chirality_validation.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_02",
+    "source": "figures/paper/fig_single_method_robustness.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_08",
+    "source": "figures/paper/fig_multi_archives.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_17",
+    "source": "figures/paper/fig_archive_coverage.png",
+    "generated": true
+  },
+  {
+    "figure": "main_04",
+    "source": "figures/expanded/fig_density_dependence.png",
+    "generated": true
+  },
+  {
+    "figure": "main_05",
+    "source": "figures/expanded/fig_single_learned_space.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_03",
+    "source": "figures/expanded/fig_high_density_examples.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_06",
+    "source": "figures/expanded/fig_single_learned_examples.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_10",
+    "source": "figures/expanded/fig_multi_learned_space.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_11",
+    "source": "figures/expanded/fig_multi_learned_examples.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_12",
+    "source": "figures/expanded/fig_champion_per_seed.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_09",
+    "source": "figures/expanded/fig_chirality_decay.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_13",
+    "source": "figures/fig_objective_champions.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_14",
+    "source": "figures/fig_objective_champions_periodic.png",
+    "generated": true
+  },
+  {
+    "figure": "main_10",
+    "source": "figures/expanded/fig_finite_size.png",
+    "generated": true
+  },
+  {
+    "figure": "main_09",
+    "source": "figures/expanded/fig_nonreciprocity.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_15",
+    "source": "figures/expanded/fig_phase_transitions.png",
+    "generated": true
+  },
+  {
+    "figure": "main_11",
+    "source": "figures/fig_boundary_result.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_16",
+    "source": "figures/fig_boundary_char.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_18",
+    "source": "figures/fig_single_repertoire_3d.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_19",
+    "source": "figures/fig_single_parameter_profiles.png",
+    "generated": true
+  },
+  {
+    "figure": "supp_01",
+    "source": "bundled numerical results",
+    "generated": true
+  }
+]

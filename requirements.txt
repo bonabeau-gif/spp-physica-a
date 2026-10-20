@@ -1,0 +1,3 @@
+# Install the full analysis environment from this repository.
+-e .[analysis,dev]
+

@@ -1,0 +1,19 @@
+{
+  "sizes_N": [
+    29,
+    56,
+    108,
+    189
+  ],
+  "binder_crossing_eta_c": 0.7871197266156519,
+  "binder_crossings_all": [
+    0.6453297750902126,
+    0.683098719589154,
+    0.7871197266156519,
+    0.8193886340909686,
+    0.9337982545696147
+  ],
+  "susceptibility_peak_largest_N": 0.6,
+  "descriptor_scout_peak": 0.5,
+  "scout_bias_vs_crossing": -0.2871197266156519
+}

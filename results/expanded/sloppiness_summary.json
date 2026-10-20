@@ -1,0 +1,35 @@
+{
+  "local_surrogate_rank_spearman": 0.4666666666666666,
+  "local_surrogate_rank_p": 0.2053863511058121,
+  "local_spectrum_decades": {
+    "aligned": 5.531139454923862,
+    "clustered": 3.9708983022590343,
+    "density_wave": 3.255123903559041,
+    "high_density_aggregate": 3.28103910646785,
+    "high_density_aligned": 7.25697516176132,
+    "milling": 4.761992866832038
+  },
+  "top_local_parameters": [
+    "alignment_range_ratio",
+    "rho",
+    "interaction_range_ratio",
+    "alignment_strength",
+    "adhesion"
+  ],
+  "top_surrogate_parameters": [
+    "rho",
+    "adhesion",
+    "noise",
+    "interaction_range_ratio",
+    "alignment_strength"
+  ],
+  "elite_count": 134,
+  "elite_inverse_variance_span_decades": 0.4443360087575437,
+  "surrogate_test_r2": {
+    "clustering": 0.6716960175712415,
+    "learned_0": 0.8223308024365732,
+    "learned_1": 0.5712837526691991,
+    "milling": 0.76201726019118,
+    "phi": 0.44455416213061505
+  }
+}

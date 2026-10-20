@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this software."
+type: software
+title: "Evolutionary Discovery of the Behavioral Repertoire of Self-Propelled Particle Models"
+version: 1.0.0
+repository-code: "https://github.com/bonabeau-gif/spp-physica-a"
+authors:
+  - family-names: Wen
+    given-names: Roujia
+  - family-names: Bonabeau
+    given-names: Eric
+preferred-citation:
+  type: manuscript
+  title: "Evolutionary Discovery of the Behavioral Repertoire of Self-Propelled Particle Models"
+  authors:
+    - family-names: Wen
+      given-names: Roujia
+    - family-names: Bonabeau
+      given-names: Eric
+  year: 2026
+

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spp-physica-a"
+version = "1.0.0"
+description = "Evolutionary discovery of the behavioral repertoire of self-propelled particle models"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Roujia Wen"},
+  {name = "Eric Bonabeau"},
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "scipy>=1.12,<2",
+  "pandas>=2.1,<4",
+  "matplotlib>=3.8,<4",
+  "pillow>=10",
+]
+
+[project.urls]
+Repository = "https://github.com/bonabeau-gif/spp-physica-a"
+Issues = "https://github.com/bonabeau-gif/spp-physica-a/issues"
+
+[project.optional-dependencies]
+learning = ["torch>=2.2,<3", "scikit-learn>=1.4,<2"]
+qd = ["ribs>=0.7,<0.9"]
+analysis = ["torch>=2.2,<3", "scikit-learn>=1.4,<2", "ribs>=0.7,<0.9", "umap-learn>=0.5,<0.6"]
+dev = ["pytest>=8", "build>=1", "twine>=5"]
+
+[project.scripts]
+spp-physica-a = "spp_unified.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["spp_unified*", "boundary*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

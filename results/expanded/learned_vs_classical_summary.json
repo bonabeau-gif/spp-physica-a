@@ -1,0 +1,68 @@
+{
+  "regression": [
+    {
+      "axis": "z1",
+      "linear_cv_r2": 0.6902878292361903,
+      "rf_cv_r2": 0.7492929322824534,
+      "linear_insample_r2": 0.7096433078227407,
+      "residual_std_linear": 0.11404238675563823,
+      "residual_std_rf": 0.10260401603568346,
+      "axis_std": 0.20492263845771672
+    },
+    {
+      "axis": "z2",
+      "linear_cv_r2": 0.8825883516744274,
+      "rf_cv_r2": 0.899837291198804,
+      "linear_insample_r2": 0.8926036652804905,
+      "residual_std_linear": 0.06805968690280069,
+      "residual_std_rf": 0.06286285401469065,
+      "axis_std": 0.19862888960716724
+    }
+  ],
+  "median_latent_dist_classically_close_pairs": 0.09542143883497507,
+  "median_latent_dist_all_pairs": 0.31921214278956705,
+  "closeness_ratio": 0.29892797310620906,
+  "n_pairs_reported": 12,
+  "dr_baselines": [
+    {
+      "method": "autoencoder_2d",
+      "trustworthiness": 0.8913565891472868,
+      "trust_boot_mean": 0.8803592139175258,
+      "trust_boot_sd": 0.010079582152735305,
+      "knn_overlap": 0.57875,
+      "knn_sd": 0.0
+    },
+    {
+      "method": "pca_2d",
+      "trustworthiness": 0.846453488372093,
+      "trust_boot_mean": 0.8447611683848798,
+      "trust_boot_sd": 0.011944268707531812,
+      "knn_overlap": 0.49375,
+      "knn_sd": 0.0
+    },
+    {
+      "method": "classical_8vec_pca2d",
+      "trustworthiness": 0.7427519379844961,
+      "trust_boot_mean": 0.7475578823024055,
+      "trust_boot_sd": 0.011515599010878556,
+      "knn_overlap": 0.34124999999999994,
+      "knn_sd": 0.0
+    },
+    {
+      "method": "diffusion_map_2d",
+      "trustworthiness": 0.8813953488372093,
+      "trust_boot_mean": 0.8593392396907217,
+      "trust_boot_sd": 0.014281231121214084,
+      "knn_overlap": 0.56875,
+      "knn_sd": 0.0
+    },
+    {
+      "method": "umap_2d",
+      "trustworthiness": 0.8982635658914729,
+      "trust_boot_mean": 0.8982635658914729,
+      "trust_boot_sd": 0.002691764889670102,
+      "knn_overlap": 0.5832499999999999,
+      "knn_sd": 0.013171939872319474
+    }
+  ]
+}

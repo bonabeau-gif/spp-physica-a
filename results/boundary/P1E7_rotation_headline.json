@@ -1,0 +1,132 @@
+{
+  "config": {
+    "N": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "seeds": 12,
+    "steps": 800
+  },
+  "by_arm": {
+    "nonreciprocal": {
+      "N": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "abs_omega_median": [
+        0.2801,
+        0.2015,
+        0.0488,
+        0.0816,
+        0.1169
+      ],
+      "rotation_r2_median": [
+        0.9,
+        0.81,
+        0.245,
+        0.691,
+        0.812
+      ],
+      "phi_median": [
+        0.558,
+        0.422,
+        0.294,
+        0.205,
+        0.148
+      ]
+    },
+    "matched_reciprocal_control": {
+      "N": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "abs_omega_median": [
+        0.0007,
+        0.0009,
+        0.0006,
+        0.0004,
+        0.0004
+      ],
+      "rotation_r2_median": [
+        0.311,
+        0.585,
+        0.184,
+        0.452,
+        0.495
+      ],
+      "phi_median": [
+        0.963,
+        0.954,
+        0.937,
+        0.899,
+        0.855
+      ]
+    },
+    "best_reciprocal": {
+      "N": [
+        64,
+        128,
+        256,
+        512,
+        1024
+      ],
+      "abs_omega_median": [
+        0.0033,
+        0.0032,
+        0.0029,
+        0.0023,
+        0.0021
+      ],
+      "rotation_r2_median": [
+        0.335,
+        0.475,
+        0.751,
+        0.718,
+        0.879
+      ],
+      "phi_median": [
+        0.841,
+        0.83,
+        0.82,
+        0.803,
+        0.792
+      ]
+    }
+  },
+  "separation": {
+    "64": {
+      "nonrecip_median": 0.2801,
+      "recip_max_median": 0.0033,
+      "ratio": 86.0
+    },
+    "128": {
+      "nonrecip_median": 0.2015,
+      "recip_max_median": 0.0032,
+      "ratio": 63.8
+    },
+    "256": {
+      "nonrecip_median": 0.0488,
+      "recip_max_median": 0.0029,
+      "ratio": 16.8
+    },
+    "512": {
+      "nonrecip_median": 0.0816,
+      "recip_max_median": 0.0023,
+      "ratio": 35.9
+    },
+    "1024": {
+      "nonrecip_median": 0.1169,
+      "recip_max_median": 0.0021,
+      "ratio": 55.3
+    }
+  }
+}

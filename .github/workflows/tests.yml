@@ -1,0 +1,19 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install ".[learning,qd,dev]"
+      - run: python -m pytest -q
+      - run: python -m spp_unified simulate --config configs/single_demo.json --output outputs/single
+      - run: python -m spp_unified simulate --config configs/two_species_demo.json --output outputs/two
+      - run: python -m build

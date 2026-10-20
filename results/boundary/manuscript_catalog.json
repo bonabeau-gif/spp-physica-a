@@ -1,0 +1,68 @@
+{
+  "source": "Supplementary Table S4",
+  "ridges": [
+    {
+      "name": "chiral",
+      "descriptor": "general",
+      "reciprocal_survives": false,
+      "single_species_survives": true,
+      "classification": "ambiguous"
+    },
+    {
+      "name": "adhesion",
+      "descriptor": "general",
+      "reciprocal_survives": true,
+      "single_species_survives": true,
+      "classification": "single_species"
+    },
+    {
+      "name": "high_density_Cs",
+      "descriptor": "general",
+      "reciprocal_survives": true,
+      "single_species_survives": true,
+      "classification": "single_species"
+    },
+    {
+      "name": "high_density_Ca",
+      "descriptor": "general",
+      "reciprocal_survives": true,
+      "single_species_survives": true,
+      "classification": "single_species"
+    },
+    {
+      "name": "demixing_candidate_1",
+      "descriptor": "mixture",
+      "reciprocal_survives": false,
+      "single_species_survives": null,
+      "classification": "candidate"
+    },
+    {
+      "name": "demixing_candidate_2",
+      "descriptor": "mixture",
+      "reciprocal_survives": false,
+      "single_species_survives": null,
+      "classification": "candidate"
+    },
+    {
+      "name": "demixing_candidate_3",
+      "descriptor": "mixture",
+      "reciprocal_survives": false,
+      "single_species_survives": null,
+      "classification": "candidate"
+    },
+    {
+      "name": "composition_1",
+      "descriptor": "mixture",
+      "reciprocal_survives": true,
+      "single_species_survives": false,
+      "classification": "validated_mixture"
+    },
+    {
+      "name": "composition_2",
+      "descriptor": "mixture",
+      "reciprocal_survives": true,
+      "single_species_survives": false,
+      "classification": "validated_mixture"
+    }
+  ]
+}

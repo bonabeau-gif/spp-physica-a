@@ -1,0 +1,31 @@
+{
+  "release_checks": {
+    "python": "3.12.11",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "torch": "2.14.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "ribs": "0.8.3",
+      "pytest": "9.1.1",
+      "setuptools": "84.2.0",
+      "pillow": "13.0.0"
+    }
+  },
+  "independent_audit": {
+    "python": "3.12.11",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.0",
+      "pandas": "3.0.3",
+      "torch": "2.12.1",
+      "scikit-learn": "1.9.0",
+      "matplotlib": "3.11.0",
+      "pillow": "12.3.0"
+    }
+  }
+}

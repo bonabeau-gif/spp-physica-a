@@ -1,0 +1,22 @@
+{
+  "matched_reciprocal": {
+    "chirality_w": 208.0,
+    "chirality_p": 2.86102294921875e-06,
+    "abs_omega_w": 210.0,
+    "abs_omega_p": 9.5367431640625e-07,
+    "median_chirality_non": 0.6999513764100141,
+    "median_chirality_control": 0.013169837087840999,
+    "median_abs_omega_non": 0.16279837198208771,
+    "median_abs_omega_control": 0.00165830616840588
+  },
+  "best_reciprocal_search": {
+    "chirality_w": 209.0,
+    "chirality_p": 1.9073486328125e-06,
+    "abs_omega_w": 210.0,
+    "abs_omega_p": 9.5367431640625e-07,
+    "median_chirality_non": 0.6999513764100141,
+    "median_chirality_control": 0.005960307672221871,
+    "median_abs_omega_non": 0.16279837198208771,
+    "median_abs_omega_control": 0.001652179163583838
+  }
+}

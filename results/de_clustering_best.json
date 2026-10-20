@@ -1,0 +1,29 @@
+{
+  "objective": "clustering",
+  "best_fitness": 0.6014569171689524,
+  "best_parameters": {
+    "rho": 0.19174446861322808,
+    "v0": 0.1182391850602802,
+    "inertia": 0.0,
+    "interaction_range_ratio": 6.321007728664169,
+    "force_strength": 0.19877177994670733,
+    "adhesion": 0.7429723534308474,
+    "alignment_range_ratio": 12.016714376887812,
+    "alignment_strength": 3.3617013405680494,
+    "noise": 0.0
+  },
+  "best_summary": {
+    "n": 89.0,
+    "phi": 0.1426027197298453,
+    "nematic": 0.070375310416307,
+    "milling": 0.02860862430277389,
+    "clustering": 6.014569171689525,
+    "segregation": 0.0,
+    "drift": 0.12647037364865407,
+    "omega": -0.011054053485282307,
+    "rotation_r2": 0.3094517021687294,
+    "chirality": 0.009756010109317348,
+    "temporal_stability": 0.9780570120739206
+  },
+  "evaluations": 144
+}

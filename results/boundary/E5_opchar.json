@@ -1,0 +1,55 @@
+{
+  "config_hash": "118e8eff1994",
+  "false_positive_rate_flat": 0.005,
+  "fp_target": 0.05,
+  "fp_pass": true,
+  "fp_b_median": 1.2302422563075097,
+  "fp_b_p95": 1.9357915003596107,
+  "hit_rates": {
+    "general_D2": 0.3333333333333333,
+    "psi_mix_confirmed": 5,
+    "psi_mix_beyond_chiral": 5
+  },
+  "budget": {
+    "cache_pkl_bytes": 75502427,
+    "note": "run length fixed 220-360 steps; adaptive escalation capped at 440 for E2/E6"
+  },
+  "catalog_table": [
+    {
+      "type": "chiral_Ja",
+      "dominant_obs": "P_plus",
+      "local_dimension": 6,
+      "C1_reciprocal_survives": false,
+      "C2_single_found": true,
+      "C3_swap_invariant": true,
+      "label": "investigate (coincidence of two boundaries)"
+    },
+    {
+      "type": "adhesion",
+      "dominant_obs": "alpha_WC",
+      "local_dimension": 11,
+      "C1_reciprocal_survives": true,
+      "C2_single_found": true,
+      "C3_swap_invariant": true,
+      "label": "single-species boundary in disguise"
+    },
+    {
+      "type": "D_demix_Cs",
+      "dominant_obs": "D",
+      "local_dimension": "n/a",
+      "C1_reciprocal_survives": true,
+      "C2_single_found": true,
+      "C3_swap_invariant": true,
+      "label": "single-species boundary in disguise"
+    },
+    {
+      "type": "E_demix_Ca",
+      "dominant_obs": "P_plus",
+      "local_dimension": "n/a",
+      "C1_reciprocal_survives": true,
+      "C2_single_found": true,
+      "C3_swap_invariant": true,
+      "label": "single-species boundary in disguise"
+    }
+  ]
+}

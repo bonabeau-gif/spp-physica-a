@@ -1,0 +1,29 @@
+{
+  "objective": "milling",
+  "best_fitness": 0.1234005693668534,
+  "best_parameters": {
+    "rho": 0.06696549652259558,
+    "v0": 0.09284175070377008,
+    "inertia": 3.8095800893589153,
+    "interaction_range_ratio": 12.69016382237484,
+    "force_strength": 2.283600608453446,
+    "adhesion": 0.07667669237559183,
+    "alignment_range_ratio": 6.309712523676767,
+    "alignment_strength": 2.500954206447277,
+    "noise": 0.7724076237077789
+  },
+  "best_summary": {
+    "n": 31.0,
+    "phi": 0.14943860277386567,
+    "nematic": 0.19602610487164074,
+    "milling": 0.14508131896097035,
+    "clustering": 3.466090375891192,
+    "segregation": 0.0,
+    "drift": 0.00907577832408963,
+    "omega": 0.21848572152793694,
+    "rotation_r2": 0.7620893415598026,
+    "chirality": 0.11388556639155217,
+    "temporal_stability": 0.913952366057376
+  },
+  "evaluations": 144
+}

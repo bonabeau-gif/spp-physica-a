@@ -1,0 +1,20 @@
+{
+  "config_hash": "118e8eff1994",
+  "mix_keys": [
+    "Omega_rel",
+    "alpha_WC",
+    "Phi_dem",
+    "chi_nn"
+  ],
+  "variance_floor": 0.1015147979392548,
+  "identical_std_mean": [
+    -0.1434981977556543,
+    -1.3904397254166239,
+    -0.5027995436935568,
+    -0.7859022219731536
+  ],
+  "null_fp_rate": 0.045,
+  "null_b_median": 0.7214208032940566,
+  "null_b_p95": 2.9462183078093807,
+  "null_pass": true
+}

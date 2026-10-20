@@ -1,0 +1,60 @@
+{
+  "partA_fixed_vs_adaptive": {
+    "hyperplane": {
+      "geom": "codim1_flat",
+      "hausdorff_fixed": 0.026226421481831852,
+      "n_fixed": 18,
+      "hausdorff_adaptive": 0.022152262501046516,
+      "n_adaptive": 30,
+      "improvement": 0.155
+    },
+    "intersecting": {
+      "geom": "two_surfaces",
+      "hausdorff_fixed": 0.026622035210086215,
+      "n_fixed": 18,
+      "hausdorff_adaptive": 0.01927597560988059,
+      "n_adaptive": 30,
+      "improvement": 0.276
+    },
+    "hypersphere": {
+      "geom": "codim1_curved",
+      "hausdorff_fixed": 0.11978761900497842,
+      "n_fixed": 5,
+      "hausdorff_adaptive": 0.03256578912905034,
+      "n_adaptive": 30,
+      "improvement": 0.728
+    },
+    "shell": {
+      "geom": "codim1_curved",
+      "hausdorff_fixed": 0.12925191510448725,
+      "n_fixed": 10,
+      "hausdorff_adaptive": 0.10859854929639479,
+      "n_adaptive": 30,
+      "improvement": 0.16
+    },
+    "bounded_patch": {
+      "geom": "bounded_patch",
+      "hausdorff_fixed": 0.1505785959642808,
+      "n_fixed": 10,
+      "hausdorff_adaptive": 0.01227495609500806,
+      "n_adaptive": 2,
+      "improvement": 0.918
+    }
+  },
+  "partB_reproducibility": {
+    "hyperplane": {
+      "geom": "codim1_flat",
+      "n_traces": 27,
+      "hausdorff_median": 0.025156914489507298,
+      "hausdorff_max": 0.03593915605660203,
+      "hausdorff_iqr": 0.0045119458099445175
+    },
+    "hypersphere": {
+      "geom": "codim1_curved",
+      "n_traces": 27,
+      "hausdorff_median": 0.037800334982443784,
+      "hausdorff_max": 0.13157787143428445,
+      "hausdorff_iqr": 0.07057220372707895
+    }
+  }
+}

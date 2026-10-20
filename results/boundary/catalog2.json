@@ -1,0 +1,117 @@
+{
+  "types": [
+    {
+      "type_id": 1,
+      "n_points": 6,
+      "families": [
+        "B_force_Ca"
+      ],
+      "dominant_obs": "P_minus",
+      "effect_size": 137.02025789248145,
+      "significant_loadings": [
+        {
+          "param": "J_s",
+          "mean": -0.7746278124052587,
+          "ci": [
+            -0.8473545069902565,
+            -0.7172644420961958
+          ]
+        },
+        {
+          "param": "J_a",
+          "mean": 0.592640984054857,
+          "ci": [
+            0.44982402768157853,
+            0.6872626244111831
+          ]
+        },
+        {
+          "param": "eta",
+          "mean": 0.07375055870304432,
+          "ci": [
+            0.06431983425056352,
+            0.08349926288478599
+          ]
+        },
+        {
+          "param": "rho",
+          "mean": -0.04791620376121136,
+          "ci": [
+            -0.0666122018918884,
+            -0.033418076151987594
+          ]
+        },
+        {
+          "param": "B",
+          "mean": -0.009501181347498737,
+          "ci": [
+            -0.017344232303777022,
+            -0.000983514781279049
+          ]
+        }
+      ],
+      "reciprocal_control": {
+        "b": 3.9628747126292496,
+        "survives": true
+      },
+      "single_species_control": {
+        "b": 4.748680306297622,
+        "survives": true
+      },
+      "is_mixture_boundary": false
+    },
+    {
+      "type_id": 2,
+      "n_points": 11,
+      "families": [
+        "A_chiral_Ja",
+        "C_comp_fB"
+      ],
+      "dominant_obs": "P_plus",
+      "effect_size": 0.5161823845763333,
+      "significant_loadings": [
+        {
+          "param": "rho",
+          "mean": -0.5858063741479321,
+          "ci": [
+            -0.6986426605778808,
+            -0.48107253926878907
+          ]
+        },
+        {
+          "param": "J_a",
+          "mean": -0.17147981667942133,
+          "ci": [
+            -0.3183591699921043,
+            -0.0037435092722478453
+          ]
+        },
+        {
+          "param": "C_a",
+          "mean": -0.10718008953020912,
+          "ci": [
+            -0.1623817738207963,
+            -0.05085816187037943
+          ]
+        }
+      ],
+      "reciprocal_control": {
+        "b": 3.9628747126292496,
+        "survives": true
+      },
+      "single_species_control": {
+        "b": 2.1455758250216226,
+        "survives": false
+      },
+      "is_mixture_boundary": true
+    }
+  ],
+  "n_points": 18,
+  "families": [
+    "A_chiral_Ja",
+    "B_force_Ca",
+    "C_comp_fB"
+  ],
+  "n_mixture_types": 1,
+  "m6_pass": false
+}

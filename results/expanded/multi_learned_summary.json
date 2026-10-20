@@ -1,0 +1,12 @@
+{
+  "selected_seed": 2,
+  "autoencoder": {
+    "train_mse": 0.21907995641231537,
+    "test_mse": 0.5771453976631165,
+    "trustworthiness": 0.9304147465437788,
+    "knn_overlap": 0.6359447004608296,
+    "epochs": 297.0
+  },
+  "silhouette_10": 0.46197605826789573,
+  "n": 126
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "single",
+  "parameters": {
+    "rho": 0.10,
+    "noise": 0.10,
+    "force_strength": 0.0,
+    "alignment_strength": 4.0
+  },
+  "simulation": {
+    "S": 4.0,
+    "steps": 160,
+    "sample_start": 80,
+    "sample_every": 2,
+    "boundary": "periodic",
+    "seed": 42
+  },
+  "state_every": 8
+}
+

@@ -1,0 +1,12 @@
+objective,gif,fitness,blurb,kind,size_kb
+aligned_flock,figures/gifs/aligned_flock.gif,0.9772352629444175,Maximal polar alignment: a single coherent flock.,single,3287
+milling_vortex,figures/gifs/milling_vortex.gif,0.3318676850685093,"Rotating mill: high angular momentum, low net polarization.",single,2662
+dense_cluster,figures/gifs/dense_cluster.gif,0.6808399402630746,Compact aggregate far above the uniform-density reference.,single,1162
+nematic_lanes,figures/gifs/nematic_lanes.gif,0.3897396681563865,Nematic order without polarity: counter-propagating lanes.,single,3674
+hexatic_crystal,figures/gifs/hexatic_crystal.gif,0.8537752358990879,Sixfold bond-orientational (crystalline) order [new pattern].,single,4073
+density_waves,figures/gifs/density_waves.gif,0.853339822287586,Strong low-wavenumber density modulation: banding [new pattern].,single,1173
+phase_separation,figures/gifs/phase_separation.gif,0.9883434982063461,Clusters coexisting with voids: motility-induced phase separation [new pattern].,single,1557
+active_turbulence,figures/gifs/active_turbulence.gif,0.9501120902606022,Persistently disordered active flow [new pattern].,single,2573
+travelling_mixture,figures/gifs/travelling_mixture.gif,0.9999635915365055,Coherently translating two-species band.,two,1836
+chiral_rotation,figures/gifs/chiral_rotation.gif,0.8062544045866012,Persistent global rotation driven by non-reciprocal coupling.,two,1886
+species_segregation,figures/gifs/species_segregation.gif,0.7043767297342424,Demixing of the two particle types.,two,2069

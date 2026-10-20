@@ -1,0 +1,65 @@
+{
+  "phi": {
+    "spearman_rho": -0.5790888304179301,
+    "spearman_p": 1.2719090840124395e-33,
+    "kruskal_H": 107.21666358879656,
+    "kruskal_p": 5.226335887697096e-24,
+    "high_vs_low_rank_biserial_low_minus_high": 0.7008333333333333,
+    "high_median": 0.0689238514900414,
+    "low_median": 0.1826161801234765
+  },
+  "milling": {
+    "spearman_rho": -0.7675349861238641,
+    "spearman_p": 3.941355069966082e-71,
+    "kruskal_H": 178.80070329332102,
+    "kruskal_p": 1.4925215127853565e-39,
+    "high_vs_low_rank_biserial_low_minus_high": 0.8643055555555555,
+    "high_median": 0.04372952216918845,
+    "low_median": 0.09849217042873865
+  },
+  "clustering": {
+    "spearman_rho": -0.21551375139211465,
+    "spearman_p": 3.7328683906581675e-05,
+    "kruskal_H": 17.88045398584177,
+    "kruskal_p": 0.00013101129816851375,
+    "high_vs_low_rank_biserial_low_minus_high": 0.2941666666666667,
+    "high_median": 0.995224923817983,
+    "low_median": 1.1840179028936162
+  },
+  "nematic": {
+    "spearman_rho": -0.7750183257586863,
+    "spearman_p": 2.378111923896126e-73,
+    "kruskal_H": 202.58029547553087,
+    "kruskal_p": 1.0238769506055102e-44,
+    "high_vs_low_rank_biserial_low_minus_high": 0.8872222222222222,
+    "high_median": 0.0698058194362543,
+    "low_median": 0.1630789025952074
+  },
+  "density_mode_peak": {
+    "spearman_rho": -0.5017780486989354,
+    "spearman_p": 2.353913905110778e-24,
+    "kruskal_H": 84.7473976608187,
+    "kruskal_p": 3.95673003922098e-19,
+    "high_vs_low_rank_biserial_low_minus_high": 0.6326388888888889,
+    "high_median": 0.00366486984264385,
+    "low_median": 0.10228202592831705
+  },
+  "hexatic": {
+    "spearman_rho": -0.22552411669843128,
+    "spearman_p": 1.5608753918736777e-05,
+    "kruskal_H": 17.21391658971993,
+    "kruskal_p": 0.0001828291779550012,
+    "high_vs_low_rank_biserial_low_minus_high": 0.29861111111111116,
+    "high_median": 0.0412768547968105,
+    "low_median": 0.07662035446561499
+  },
+  "local_density_cv": {
+    "spearman_rho": -0.7971888155765632,
+    "spearman_p": 1.8372523667839745e-80,
+    "kruskal_H": 219.7399913245202,
+    "kruskal_p": 1.923389129277544e-48,
+    "high_vs_low_rank_biserial_low_minus_high": 0.9327777777777778,
+    "high_median": 0.22704211974226246,
+    "low_median": 0.5661201232031534
+  }
+}
