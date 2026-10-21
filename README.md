@@ -33,7 +33,19 @@ With $\widehat{\mathbf{r}}_{ij}$ pointing from particle $i$ to particle $j$,
 the radial force is
 
 ```math
-\begin{aligned} \mathbf{F}_i &= \sum_{j\ne i} f(r_{ij})\,\widehat{\mathbf{r}}_{ij},\\ f(r) &= \begin{cases} -F_{\mathrm{core}}, & r\le 2r_0,\\ (\beta+1)\dfrac{r-2r_0}{r_1-2r_0}-1, & 2r_0<r<r_1,\\ 0, & r\ge r_1, \end{cases}\\ \beta &= \exp\!\left[\tan\!\left(\frac{\pi B}{2}\right)\right]. \end{aligned}
+\mathbf{F}_i = \sum_{j\ne i} f(r_{ij})\,\widehat{\mathbf{r}}_{ij},
+```
+
+with the piecewise interaction strength
+
+```math
+f(r) = \begin{cases} -F_{\mathrm{core}}, & r\le 2r_0,\\ (\beta+1)\dfrac{r-2r_0}{r_1-2r_0}-1, & 2r_0\lt r\lt r_1,\\ 0, & r\ge r_1. \end{cases}
+```
+
+The attraction parameter is
+
+```math
+\beta = \exp\!\left[\tan\!\left(\frac{\pi B}{2}\right)\right].
 ```
 
 The numerical hard-core strength is $F_{\mathrm{core}}=50$ by default.
