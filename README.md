@@ -15,24 +15,16 @@ $\mathbf{u}_i(t)=(\cos\theta_i(t),\sin\theta_i(t))$. At each synchronous step,
 the deterministic drive combines heading persistence, local alignment, an
 optional taxis cue, and pair interactions:
 
-$$
-\mathbf{d}_i(t)
-= \epsilon\,\mathbf{u}_i(t)
-+ \alpha\,\mathbf{a}_i(t)
-+ \gamma\,\mathbf{G}
-+ f_0\,\mathbf{F}_i(t).
-$$
+```math
+\mathbf{d}_i(t) = \epsilon\,\mathbf{u}_i(t) + \alpha\,\mathbf{a}_i(t) + \gamma\,\mathbf{G} + f_0\,\mathbf{F}_i(t).
+```
 
 Independent angular noise is added to the drive direction. Before boundary
 handling and overlap correction, the update is
 
-$$
-\begin{aligned}
-\theta_i(t+1) &= \arg\!\left(\mathbf{d}_i(t)\right)+\eta\,\xi_i(t),
-& \xi_i(t)&\sim\mathcal{U}[-\pi,\pi],\\
-\mathbf{x}_i(t+1) &= \mathbf{x}_i(t)+v_0\,\Delta t\,\mathbf{u}_i(t+1).
-\end{aligned}
-$$
+```math
+\begin{aligned} \theta_i(t+1) &= \arg\!\left(\mathbf{d}_i(t)\right)+\eta\,\xi_i(t), \\ \xi_i(t) &\sim\mathcal{U}[-\pi,\pi],\\ \mathbf{x}_i(t+1) &= \mathbf{x}_i(t)+v_0\,\Delta t\,\mathbf{u}_i(t+1). \end{aligned}
+```
 
 The paper uses $\Delta t=1$ and $\gamma=0$. If the drive vanishes, the
 implementation retains the previous heading before adding noise. Alignment
@@ -40,18 +32,9 @@ uses the normalized sum of neighboring headings, including the focal particle.
 With $\widehat{\mathbf{r}}_{ij}$ pointing from particle $i$ to particle $j$,
 the radial force is
 
-$$
-\begin{aligned}
-\mathbf{F}_i &= \sum_{j\ne i} f(r_{ij})\,\widehat{\mathbf{r}}_{ij},\\
-f(r) &=
-\begin{cases}
--F_{\mathrm{core}}, & r\le 2r_0,\\
-(\beta+1)\dfrac{r-2r_0}{r_1-2r_0}-1, & 2r_0<r<r_1,\\
-0, & r\ge r_1,
-\end{cases}\\
-\beta &= \exp\!\left[\tan\!\left(\frac{\pi B}{2}\right)\right].
-\end{aligned}
-$$
+```math
+\begin{aligned} \mathbf{F}_i &= \sum_{j\ne i} f(r_{ij})\,\widehat{\mathbf{r}}_{ij},\\ f(r) &= \begin{cases} -F_{\mathrm{core}}, & r\le 2r_0,\\ (\beta+1)\dfrac{r-2r_0}{r_1-2r_0}-1, & 2r_0<r<r_1,\\ 0, & r\ge r_1, \end{cases}\\ \beta &= \exp\!\left[\tan\!\left(\frac{\pi B}{2}\right)\right]. \end{aligned}
+```
 
 The numerical hard-core strength is $F_{\mathrm{core}}=50$ by default.
 Three overlap-projection passes follow each update; the saved diagnostics
@@ -61,19 +44,9 @@ $\rho$, $v_0$, $\epsilon$, $r_1/r_0$, $f_0$, $B$, $r_a/r_0$, $\alpha$, and $\eta
 In the two-species extension, the alignment weights and additive radial
 couplings are
 
-$$
-J=
-\begin{pmatrix}
-1 & J_s+J_a\\
-J_s-J_a & 1
-\end{pmatrix},
-\qquad
-C=
-\begin{pmatrix}
-0 & C_s+C_a\\
-C_s-C_a & 0
-\end{pmatrix}.
-$$
+```math
+J= \begin{pmatrix} 1 & J_s+J_a\\ J_s-J_a & 1 \end{pmatrix}, \qquad C= \begin{pmatrix} 0 & C_s+C_a\\ C_s-C_a & 0 \end{pmatrix}.
+```
 
 Together with the species-B fraction $f_B$, these add five controls.
 The matched reciprocal control sets $J_a=C_a=0$. Measurements include polar
@@ -83,7 +56,7 @@ contain 51 single-species or 107 two-species features.
 
 See [numerical conventions](docs/NUMERICS.md) for normalization, geometry,
 sampling, and the scope of numerical replay. Mathematical expressions use
-[GitHub's supported LaTeX delimiters](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+[GitHub's supported math formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
 
 ## Install
 
