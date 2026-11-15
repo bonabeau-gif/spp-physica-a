@@ -103,7 +103,8 @@ No paths, environment variables, or working-directory files influence a run.
 times, git commit, versions, seed, error), `summary.json` (values with units), `schema.json`
 (columns and units of `outputs/`), `log.txt`, and `outputs/` with `timeseries.csv`,
 `trajectory.npz`, and the legacy `run.json`. Same config and code give byte-identical
-`outputs/` and `summary.json`.
+`outputs/` and `summary.json` on the same platform and numpy build; across platforms, chaotic
+regimes (e.g. the two-species demo) can differ by ~1% in summary values.
 
 ## Verify the installation
 
