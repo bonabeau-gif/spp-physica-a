@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "kind": "single",
+  "parameters": {"rho": 0.08, "noise": 0.1},
+  "simulation": {"steps": 60, "sample_start": 30, "seed": 1},
+  "state_every": 6
+}

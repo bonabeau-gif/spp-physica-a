@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "kind": "two",
+  "parameters": {"rho": 0.15, "noise": 0.05},
+  "mixture": {
+    "fraction_B": 0.5,
+    "alignment_symmetric": 0.2,
+    "alignment_antisymmetric": 0.0,
+    "force_symmetric": 0.0,
+    "force_antisymmetric": 0.0
+  },
+  "simulation": {"steps": 440, "sample_start": 220, "boundary": "periodic", "seed": 43},
+  "state_every": 10
+}
