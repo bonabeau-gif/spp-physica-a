@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "kind": "single",
+  "parameters": {
+    "rho": 0.15, "v0": 0.05, "inertia": 0.3, "interaction_range_ratio": 5.0,
+    "force_strength": 0.0, "adhesion": 0.0, "alignment_range_ratio": 8.0,
+    "alignment_strength": 3.5, "gradient_strength": 0.0, "noise": 0.2
+  },
+  "simulation": {"steps": 180, "sample_start": 90, "sample_every": 2, "boundary": "periodic", "seed": 1000},
+  "state_every": 8
+}

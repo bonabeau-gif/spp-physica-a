@@ -1,0 +1,41 @@
+{
+  "source": "spp-physica-a simulate on configs/*.json at commit dacbcc4 (before the agent layer); Python 3.12.11, numpy 2.5.4, macOS arm64",
+  "single_demo": {
+    "n": 46.0,
+    "phi": 0.9736408655092645,
+    "nematic": 0.8983068067091342,
+    "milling": 0.03953337385119913,
+    "clustering": 1.2053284145269674,
+    "segregation": 0.0,
+    "drift": 0.9649929530496658,
+    "omega": -0.0052417208537857436,
+    "abs_omega": 0.0052417208537857436,
+    "rotation_r2": 0.7451947416483671,
+    "chirality": 0.07606282655860908,
+    "temporal_stability": 0.9721501844058588
+  },
+  "two_species_demo": {
+    "n": 46.0,
+    "phi": 0.23685650827147986,
+    "nematic": 0.18149883174202416,
+    "milling": 0.18416787672533258,
+    "clustering": 3.6628874020678253,
+    "segregation": 0.07473765143899627,
+    "drift": 0.023400503262564237,
+    "omega": 0.04065366592907232,
+    "abs_omega": 0.04065366592907232,
+    "rotation_r2": 0.11679409929135853,
+    "chirality": 0.0224924070333395,
+    "temporal_stability": 0.9166297383475889
+  },
+  "single_demo_diagnostics": {
+    "final_minimum_separation": 0.22403608584451687,
+    "diameter": 0.2,
+    "final_overlapping_pairs": 0
+  },
+  "two_species_demo_diagnostics": {
+    "final_minimum_separation": 0.1800819706355677,
+    "diameter": 0.2,
+    "final_overlapping_pairs": 7
+  }
+}

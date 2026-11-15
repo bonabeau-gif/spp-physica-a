@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "spp-physica-a/config.schema.json",
+  "title": "spp-physica-a run configuration",
+  "description": "Generated from spp_unified/registry.py by `spp-physica-a describe --schema`. Cross-parameter constraints are checked by `validate`, not by this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1,
+      "description": "Configuration format version."
+    },
+    "kind": {
+      "enum": [
+        "single",
+        "two"
+      ],
+      "default": "single",
+      "description": "Model to run: 'single' species or 'two' species."
+    },
+    "state_every": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 8,
+      "description": "Record positions and headings every state_every updates (plus the last). Descriptors use the last 10 recorded frames, so this changes the descriptor. Unit: updates."
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rho": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "default": 0.15,
+          "description": "Packing density relative to hexagonal close packing. The particle count is n = max(8, round(rho * round(sqrt(3)/6 * (S/r0)^2))), so rho sets n, not a number per unit area. Higher rho gives more particles and quadratically longer runs. Very high rho can make initial non-overlapping placement fail. The single-species learned corpus used rho up to 0.70 at S=3.2. Unit: dimensionless."
+        },
+        "v0": {
+          "type": "number",
+          "minimum": 0.0,
+          "default": 0.05,
+          "description": "Self-propulsion speed. Each update moves a particle v0*dt along its new heading. Unit: simulation length unit per simulation time unit."
+        },
+        "inertia": {
+          "type": "number",
+          "default": 0.5,
+          "description": "Weight of the current heading in the drive (heading persistence). Unit: dimensionless."
+        },
+        "interaction_range_ratio": {
+          "type": "number",
+          "exclusiveMinimum": 2.0,
+          "default": 7.0,
+          "description": "Pair-force cutoff r1 in units of r0. The force is repulsive just outside the hard core (2*r0), crosses zero, and is attractive up to r1. Also the radius used for the clustering and segregation measures. Unit: multiples of r0."
+        },
+        "force_strength": {
+          "type": "number",
+          "default": 1.0,
+          "description": "Weight of the summed radial pair force in the drive. 0 disables pair forces in the heading update (overlap projection still applies). Unit: dimensionless."
+        },
+        "adhesion": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Attraction parameter B; beta = exp(tan(pi*B/2)) sets the attractive part of the force law. Larger B means stronger attraction. The code clips B to [-0.95, 0.95] (and tan to [-8, 8]) before mapping, so values beyond that have no further effect. Unit: dimensionless."
+        },
+        "alignment_range_ratio": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "default": 7.0,
+          "description": "Alignment radius ra in units of r0: neighbors within ra contribute to the normalized alignment direction. Unit: multiples of r0."
+        },
+        "alignment_strength": {
+          "type": "number",
+          "default": 2.0,
+          "description": "Weight of the local alignment direction in the drive. Larger values favor polar order (flocking). Unit: dimensionless."
+        },
+        "gradient_angle": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Direction of the constant taxis cue G. Fixed in the paper's searches (taxis strength 0). Unit: radian."
+        },
+        "gradient_strength": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Weight of the taxis cue in the drive. The paper uses gamma = 0. Unit: dimensionless."
+        },
+        "noise": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "default": 0.1,
+          "description": "Angular noise amplitude: each update adds noise * U[-pi, pi] to the heading. Increasing noise destroys polar order (order-disorder transition). Unit: fraction of pi (angular noise amplitude)."
+        }
+      }
+    },
+    "mixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fraction_B": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "default": 0.5,
+          "description": "Fraction of particles assigned to species B (n_B = round(fraction_B * n)). Labels are shuffled with seed+7919. Unit: dimensionless."
+        },
+        "alignment_symmetric": {
+          "type": "number",
+          "default": 1.0,
+          "description": "Symmetric part of the cross-species alignment weight. 1 with J_a=0 makes species indistinguishable in alignment. Unit: dimensionless."
+        },
+        "alignment_antisymmetric": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Antisymmetric (non-reciprocal) part of the cross-species alignment weight: A aligns to B with Js+Ja, B to A with Js-Ja. Unit: dimensionless."
+        },
+        "force_symmetric": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Symmetric part of the additive cross-species radial coupling (linear envelope from 2*r0 to r1). Positive attracts. Unit: dimensionless."
+        },
+        "force_antisymmetric": {
+          "type": "number",
+          "default": 0.0,
+          "description": "Antisymmetric (non-reciprocal) part of the additive cross-species radial coupling. Unit: dimensionless."
+        }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "S": {
+          "type": "number",
+          "default": 4.0,
+          "description": "Side length of the square box. With r0 fixed, larger S means more particles at the same rho (cost grows as n^2). The paper uses S=4 (single-species learned corpus: S=3.2). Unit: simulation length unit."
+        },
+        "r0": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "default": 0.1,
+          "description": "Particle radius; hard-core diameter is 2*r0. Interaction radii are multiples of r0. Unit: simulation length unit."
+        },
+        "steps": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 240,
+          "description": "Number of synchronous updates. Runtime is linear in steps. Unit: updates."
+        },
+        "sample_start": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 120,
+          "description": "Zero-based loop index at which order-parameter sampling begins (burn-in). Summary values average only over samples at or after it. Unit: updates."
+        },
+        "sample_every": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 2,
+          "description": "Sampling interval for the order-parameter time series. Unit: updates."
+        },
+        "boundary": {
+          "enum": [
+            "periodic",
+            "reflecting"
+          ],
+          "default": "periodic",
+          "description": "Box boundary: periodic (minimum image) or reflecting walls (normal heading component reversed)."
+        },
+        "dt": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "default": 1.0,
+          "description": "Time step. The paper uses dt=1. Changes displacement per update (v0*dt), not the number of updates. Unit: simulation time unit (one update has duration dt)."
+        },
+        "hard_core_strength": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "default": 50.0,
+          "description": "Finite replacement for the infinite hard-core repulsion: f(r) = -hard_core_strength for r <= 2*r0. Unit: dimensionless."
+        },
+        "overlap_iterations": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 3,
+          "description": "Overlap-projection passes after each update. Changing it changes the numerical trajectory; 3 does not guarantee zero overlaps in crowded states (see diagnostics). Unit: passes."
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Seed for numpy.random.default_rng; controls initial positions, headings, noise, and (two species, via seed+7919) species labels. All randomness flows from it. If omitted, `run` picks one, records it, and reports it on stderr. (The legacy `simulate` command and SimulationConfig default to 0.)"
+        },
+        "use_cell_list": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use the linked-cell neighbor accelerator (spp_unified/neighbors.py) instead of dense all-pairs. Its docstring states it finds exactly the same within-cutoff pairs; it falls back to the dense path for small n."
+        }
+      }
+    },
+    "sweep": {
+      "type": "object",
+      "description": "Only for `sweep`: dotted parameter name -> list of values (Cartesian product).",
+      "propertyNames": {
+        "enum": [
+          "parameters.rho",
+          "parameters.v0",
+          "parameters.inertia",
+          "parameters.interaction_range_ratio",
+          "parameters.force_strength",
+          "parameters.adhesion",
+          "parameters.alignment_range_ratio",
+          "parameters.alignment_strength",
+          "parameters.gradient_angle",
+          "parameters.gradient_strength",
+          "parameters.noise",
+          "mixture.fraction_B",
+          "mixture.alignment_symmetric",
+          "mixture.alignment_antisymmetric",
+          "mixture.force_symmetric",
+          "mixture.force_antisymmetric",
+          "simulation.S",
+          "simulation.r0",
+          "simulation.steps",
+          "simulation.sample_start",
+          "simulation.sample_every",
+          "simulation.boundary",
+          "simulation.dt",
+          "simulation.hard_core_strength",
+          "simulation.overlap_iterations",
+          "simulation.seed",
+          "simulation.use_cell_list",
+          "state_every"
+        ]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1
+      }
+    }
+  },
+  "x-constraints": {
+    "sample_start_before_steps": {
+      "expression": "simulation.sample_start < simulation.steps",
+      "severity": "error",
+      "fields": [
+        "simulation.sample_start",
+        "simulation.steps"
+      ],
+      "description": "Sampling must start before the run ends."
+    },
+    "box_exceeds_diameter": {
+      "expression": "simulation.S > 2 * simulation.r0",
+      "severity": "error",
+      "fields": [
+        "simulation.S",
+        "simulation.r0"
+      ],
+      "description": "The box must be larger than one particle diameter."
+    },
+    "particle_placement": {
+      "expression": "n particles fit on the initial grid with spacing >= 2.02*r0",
+      "severity": "error",
+      "fields": [
+        "parameters.rho",
+        "simulation.S",
+        "simulation.r0"
+      ],
+      "description": "Initial placement (geometry.initialize_positions) raises if rho is too high for the box."
+    },
+    "r1_within_half_box": {
+      "expression": "parameters.interaction_range_ratio * simulation.r0 <= simulation.S / 2",
+      "severity": "warning",
+      "fields": [
+        "parameters.interaction_range_ratio",
+        "simulation.S",
+        "simulation.r0"
+      ],
+      "description": "Clustering's periodic normalization and clean minimum-image geometry assume r1 <= S/2 (docs/NUMERICS.md). Runs still execute."
+    },
+    "adhesion_clip": {
+      "expression": "abs(parameters.adhesion) <= 0.95",
+      "severity": "warning",
+      "fields": [
+        "parameters.adhesion"
+      ],
+      "description": "beta_from_adhesion clips B to [-0.95, 0.95]; larger magnitudes are silently equivalent to +/-0.95."
+    },
+    "mixture_requires_two": {
+      "expression": "mixture block only when kind == 'two'",
+      "severity": "error",
+      "fields": [
+        "mixture"
+      ],
+      "description": "The single model ignores mixture parameters; giving them is treated as a mistake."
+    }
+  }
+}

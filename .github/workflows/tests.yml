@@ -16,4 +16,8 @@ jobs:
       - run: python -m pytest -q
       - run: python -m spp_unified simulate --config configs/single_demo.json --output outputs/single
       - run: python -m spp_unified simulate --config configs/two_species_demo.json --output outputs/two
+      - run: python -m spp_unified validate examples/minimal_single.json --json
+      - run: python -m spp_unified run examples/minimal_single.json --out runs/minimal --json
+      - run: python -m spp_unified query runs/minimal summary --json
+      - run: python -m spp_unified sweep examples/sweep_noise.json --out runs/noise --json
       - run: python -m build

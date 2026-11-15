@@ -1,0 +1,17 @@
+{
+  "source": "spp-physica-a run examples/minimal_single.json; Python 3.12.11, numpy 2.5.4, macOS arm64",
+  "values": {
+    "n": 37.0,
+    "phi": 0.6469863477046255,
+    "nematic": 0.3125046924840203,
+    "milling": 0.30758300687398166,
+    "clustering": 2.6197766530964754,
+    "segregation": 0.0,
+    "drift": 0.5823212480297225,
+    "omega": -0.04973138217106503,
+    "abs_omega": 0.04973138217106503,
+    "rotation_r2": 0.9349186463177261,
+    "chirality": 0.6016299714816244,
+    "temporal_stability": 0.8381062137133621
+  }
+}

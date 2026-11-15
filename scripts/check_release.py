@@ -11,7 +11,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 EXCLUDED = {".git", ".venv", "__pycache__", ".pytest_cache", ".cache",
-            "build", "dist", "outputs"}
+            "build", "dist", "outputs", "runs"}
 
 
 def release_files():
