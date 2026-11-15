@@ -59,7 +59,9 @@ spp-physica-a sweep examples/sweep_noise.json --out runs/noise --json
 spp-physica-a query runs/noise summary --json            # one row per (noise, seed)
 ```
 
-Mean `phi` falls from 1.00 (noise 0) to 0.92 (0.2), 0.70 (0.4), 0.33 (0.6), 0.12 (0.8).
+In that configuration (see `examples/typical_single.json`), mean `phi` over 4 seeds falls from
+1.00 (noise 0) to 0.92 (0.2), 0.70 (0.4), 0.33 (0.6), 0.12 (0.8). There is no grouped-statistics
+query yet: average per-point values yourself, and parse JSON, not text.
 Other examples, each with a sidecar `.md` of commands and measured values:
 `examples/minimal_single.json` (smoke test), `examples/two_species_nonreciprocal.json` and its
 matched control `examples/two_species_reciprocal.json`.
@@ -77,7 +79,9 @@ One JSON file (full-line `//` comments allowed). Same format as `configs/*.json`
 ```
 
 Omitted keys take registry defaults. `docs/config.schema.json` is the JSON Schema. A `sweep`
-block maps dotted names to value lists: `"sweep": {"parameters.noise": [0.2, 0.4], "simulation.seed": [1, 2]}`.
+block maps dotted names to value lists: `"sweep": {"parameters.noise": [0.2, 0.4], "simulation.seed": [1, 2]}`;
+swept values override the base values (which may be omitted). `query <sweep_dir> summary` lists
+phi, milling, clustering and nematic per point; use `query <sweep_dir>/point_NNNN ...` for the rest.
 No paths, environment variables, or working-directory files influence a run.
 
 ## Rules for using it well
@@ -104,8 +108,8 @@ times, git commit, versions, seed, error), `summary.json` (values with units), `
 ## Verify the installation
 
 ```bash
-python -m pytest -q tests/test_smoke.py        # validate -> run -> query on the minimal example, ~2 s
-python -m pytest -q                            # full suite, ~1 min (torch/ribs tests skip without them)
+python -m pytest -q tests/test_smoke.py        # validate -> run -> query on the minimal example, ~0.5 s
+python -m pytest -q                            # full suite, ~5-15 s (torch/sklearn/ribs tests skip without them)
 ```
 
 ## Known limits
