@@ -6,6 +6,8 @@ This repository explores how local interaction rules generate collective motion.
 
 The package includes single- and two-species dynamics, reflecting and periodic boundaries, classical collective-state measures, MAP-Elites and CMA-MAE, differential evolution, trajectory descriptors, autoencoders, local sensitivity and ridge tracing, reciprocal controls, finite-size analyses, and figure-generation code. Saved numerical results and model checkpoints are included.
 
+AI agents and scripted workflows: start with [`AGENTS.md`](AGENTS.md) (command-line `describe` / `validate` / `run` / `query` interface).
+
 ![Quality-diversity archives for alignment–milling and alignment–clustering](figures/manuscript/main_figure_2.png)
 
 ## Model
